@@ -66,11 +66,28 @@ const Groups = () => {
   };
 
   const groupColors = [
-    { bg: 'from-blue-500 to-blue-600', border: 'border-blue-500/30', text: 'text-blue-400' },
-    { bg: 'from-purple-500 to-purple-600', border: 'border-purple-500/30', text: 'text-purple-400' },
-    { bg: 'from-orange-500 to-orange-600', border: 'border-orange-500/30', text: 'text-orange-400' },
-    { bg: 'from-pink-500 to-pink-600', border: 'border-pink-500/30', text: 'text-pink-400' },
+    { bg: 'from-[#006666] to-[#061a2f]', border: 'border-[#006666]/30', text: 'text-[#006666]' },
+    { bg: 'from-[#006666] to-[#061a2f]', border: 'border-[#006666]/30', text: 'text-[#006666]' },
+    { bg: 'from-[#006666] to-[#061a2f]', border: 'border-[#006666]/30', text: 'text-[#006666]' },
+    { bg: 'from-[#006666] to-[#061a2f]', border: 'border-[#006666]/30', text: 'text-[#006666]' },
   ];
+
+  const organizationLogos = {
+    "Synopsys Lanka Private Limited": "/Synopsys.jpg",
+    "Matific Sri Lanka": "/Matific.png",
+    "Yaala Labs": "/Yala.png",
+    "Aayu Technologies": "/Aayu Techonolgies.png",
+    "Itechtro Private Limited": "/Itechro.png",
+    "SenzMate": "/SenzMate.png",
+    "Insighture": "/Insighture.png",
+    "Ironone Technologies": "/Ironone.jpg",
+    "99x": "/99X.png",
+    "Thomson Reuters": "/Thomson Reuters.jpg",
+    "GTN Technologies": "/GTN.png",
+    "Lanka Domain Registry": "/LK Domain Registry.png",
+    "Codegen International(PVT) Limited": "/CodeGen.png",
+    "CSE": "/CSE.avif"
+  };
 
   return (
     <div className="min-h-screen pt-28 pb-24">
@@ -127,8 +144,8 @@ const Groups = () => {
                 onClick={solveGrouping}
                 disabled={solving || allTeams.length !== 20}
                 className={`group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-base transition-all duration-300 ${solving || allTeams.length !== 20
-                    ? 'bg-white/5 text-htg-text-muted cursor-not-allowed border border-white/5'
-                    : 'btn-primary-glow bg-htg-primary text-htg-dark-950 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:-translate-y-1'
+                  ? 'bg-white/5 text-htg-text-muted cursor-not-allowed border border-white/5'
+                  : 'btn-primary-glow bg-htg-primary text-htg-dark-950 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] hover:-translate-y-1'
                   }`}
               >
                 {solving ? (
@@ -198,9 +215,24 @@ const Groups = () => {
                         className="flex items-center justify-between rounded-xl border border-white/5 bg-white/5 px-4 py-4 hover:bg-white/10 hover:border-white/10 transition-all duration-200 group"
                       >
                         <div className="flex items-center gap-4 flex-1 min-w-0">
-                          <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${colorScheme.bg} text-white font-bold flex items-center justify-center flex-shrink-0 shadow-lg`}>
+                          {/* Rank/Number */}
+                          <div className={`w-8 h-8 rounded-lg bg-white/10 text-white/70 font-bold flex items-center justify-center flex-shrink-0 text-sm`}>
                             {teamIndex + 1}
                           </div>
+
+                          {/* Logo */}
+                          <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center flex-shrink-0 overflow-hidden p-1">
+                            {organizationLogos[team.org] ? (
+                              <img
+                                src={organizationLogos[team.org]}
+                                alt={team.org}
+                                className="w-full h-full object-contain"
+                              />
+                            ) : (
+                              <Shield size={16} className="text-htg-primary" />
+                            )}
+                          </div>
+
                           <div className="flex-1 min-w-0">
                             <div className="font-bold text-white text-lg truncate">{team.name}</div>
                             <div className="text-xs font-semibold text-htg-text-muted uppercase tracking-wide truncate">

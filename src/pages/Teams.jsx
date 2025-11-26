@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Shield, Building2, Trophy } from 'lucide-react';
+import { Users, Shield, Layers, Trophy } from 'lucide-react';
 import { organizationsData } from '../data/organizationsData';
 
 const Teams = () => {
@@ -7,7 +7,24 @@ const Teams = () => {
     (count, teams) => count + teams.length,
     0
   );
-  const totalOrgs = Object.keys(organizationsData).length;
+  const totalGroups = 4;
+
+  const organizationLogos = {
+    "Synopsys Lanka Private Limited": "/Synopsys.jpg",
+    "Matific Sri Lanka": "/Matific.png",
+    "Yaala Labs": "/Yala.png",
+    "Aayu Technologies": "/Aayu Techonolgies.png",
+    "Itechtro Private Limited": "/Itechro.png",
+    "SenzMate": "/SenzMate.png",
+    "Insighture": "/Insighture.png",
+    "Ironone Technologies": "/Ironone.jpg",
+    "99x": "/99X.png",
+    "Thomson Reuters": "/Thomson Reuters.jpg",
+    "GTN Technologies": "/GTN.png",
+    "Lanka Domain Registry": "/LK Domain Registry.png",
+    "Codegen International(PVT) Limited": "/CodeGen.png",
+    "CSE": "/CSE.avif"
+  };
 
   return (
     <div className="min-h-screen pt-28 pb-24">
@@ -42,11 +59,11 @@ const Teams = () => {
             </div>
             <div className="glass-card inline-flex items-center gap-3 px-6 py-4 rounded-2xl">
               <div className="w-12 h-12 rounded-xl bg-htg-primary/10 flex items-center justify-center border border-htg-primary/20">
-                <Building2 size={24} className="text-htg-primary" />
+                <Layers size={24} className="text-htg-primary" />
               </div>
               <div>
-                <div className="text-2xl font-black text-white">{totalOrgs}</div>
-                <div className="text-xs font-semibold text-htg-text-muted uppercase tracking-wide">Organizations</div>
+                <div className="text-2xl font-black text-white">{totalGroups}</div>
+                <div className="text-xs font-semibold text-htg-text-muted uppercase tracking-wide">Groups</div>
               </div>
             </div>
           </div>
@@ -62,8 +79,16 @@ const Teams = () => {
             >
               {/* Organization Header */}
               <div className="flex items-start gap-4 mb-6 pb-6 border-b border-white/5">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-htg-primary to-htg-primary-dark flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <Shield size={24} className="text-white" />
+                <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-lg overflow-hidden p-2">
+                  {organizationLogos[orgName] ? (
+                    <img
+                      src={organizationLogos[orgName]}
+                      alt={orgName}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <Shield size={24} className="text-htg-primary" />
+                  )}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-xs uppercase tracking-wide text-htg-text-muted font-semibold mb-1">Organization</p>

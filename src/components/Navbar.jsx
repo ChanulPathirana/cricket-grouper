@@ -19,7 +19,6 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'Teams', path: '/teams' },
     { name: 'Groups', path: '/groups' },
-    { name: 'About', path: '/about' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -27,8 +26,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? 'bg-htg-dark-950/80 backdrop-blur-xl shadow-lg border-b border-white/5'
-          : 'bg-transparent'
+        ? 'bg-htg-dark-950/80 backdrop-blur-xl shadow-lg border-b border-white/5'
+        : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,8 +57,8 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={`relative px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 ${isActive(link.path)
-                    ? 'text-htg-primary bg-htg-primary/10'
-                    : 'text-htg-text-muted hover:text-white hover:bg-white/5'
+                  ? 'text-htg-primary bg-htg-primary/10'
+                  : 'text-htg-text-muted hover:text-white hover:bg-white/5'
                   }`}
               >
                 {link.name}
@@ -100,8 +99,8 @@ const Navbar = () => {
               to={link.path}
               onClick={() => setIsOpen(false)}
               className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${isActive(link.path)
-                  ? 'bg-htg-primary/10 text-htg-primary'
-                  : 'text-htg-text-muted hover:bg-white/5 hover:text-white'
+                ? 'bg-htg-primary/10 text-htg-primary'
+                : 'text-htg-text-muted hover:bg-white/5 hover:text-white'
                 }`}
             >
               {link.name}

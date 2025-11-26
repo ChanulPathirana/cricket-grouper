@@ -10,9 +10,9 @@ const Home = () => {
   ];
 
   const eventDetails = [
-    { icon: Calendar, label: 'Date', value: 'November 2025' },
+    { icon: Calendar, label: 'Date', value: '29th November 2025' },
     { icon: MapPin, label: 'Venue', value: 'University Grounds' },
-    { icon: Users, label: 'Hosted by', value: 'CSE Community' },
+    { icon: Users, label: 'Hosted by', value: 'CSESS' },
   ];
 
   return (

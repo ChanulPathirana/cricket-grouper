@@ -13,9 +13,8 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, text: 'info@htg.cse.lk', href: 'mailto:info@htg.cse.lk' },
-    { icon: Phone, text: '+94 XX XXX XXXX', href: 'tel:+94XXXXXXXXX' },
-    { icon: MapPin, text: 'University of Moratuwa', href: '#' },
+    { icon: Mail, text: 'https://htg.cse.uom.lk/', href: 'https://htg.cse.uom.lk/' },
+    { icon: MapPin, text: 'University of Moratuwa', href: '#' }
   ];
 
   return (
