@@ -47,7 +47,7 @@ Built with a focus on **aesthetics** and **user experience**, the app delivers a
 | **Home Page** | **Groups Draw** |
 |:---:|:---:|
 | *Experience the hype* | *Watch the magic happen* |
-| ![Home](https://placehold.co/600x400/061a2f/006666?text=Home+Page) | ![Groups](https://placehold.co/600x400/061a2f/006666?text=Groups+Draw) |
+| ![Home](./public/Home%20Page.png) | ![Groups](./public/Draws%20Page.png) |
 
 ---
 
