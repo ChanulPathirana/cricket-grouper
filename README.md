@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# 🏏 Hit The Grounds 2025 - Draw Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Hit The Grounds Banner](https://img.shields.io/badge/Hit%20The%20Grounds-2025-006666?style=for-the-badge&logo=cricket&labelColor=061a2f)
 
-## Available Scripts
+> **The premier corporate cricket tournament draw generator.**  
+> *Balanced groups, seamless animations, and a premium experience.*
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Hit The Grounds Draw** is a modern, high-performance web application designed to automate the grouping process for the HTG 2025 cricket tournament. It features a constraint-satisfaction algorithm to ensure fair play by preventing teams from the same organization from being placed in the same group.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Built with a focus on **aesthetics** and **user experience**, the app delivers a "wow" factor with smooth animations, glassmorphism effects, and a sleek dark theme.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Tech Stack
 
-### `npm run build`
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌟 Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🎯 **Smart Group Generation**
+-   **Constraint Solving**: Automatically ensures teams from the same organization are separated.
+-   **Balanced Distribution**: Creates 4 groups of 5 teams each.
 
-### `npm run eject`
+### 🎨 **Premium UI/UX**
+-   **Glassmorphism Design**: Modern, translucent cards and panels.
+-   **Dark Mode**: A professional, cricket-inspired dark theme with emerald accents.
+-   **Responsive**: Fully optimized for desktops, tablets, and mobile devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🎬 **Cinematic Animations**
+-   **Live Draw**: Watch teams "fly" from the pool to their assigned groups.
+-   **Staggered Reveals**: Smooth, wave-like entry animations for a dramatic effect.
+-   **Interactive Elements**: Hover effects, glow animations, and smooth transitions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📸 Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| **Home Page** | **Groups Draw** |
+|:---:|:---:|
+| *Experience the hype* | *Watch the magic happen* |
+| ![Home](https://placehold.co/600x400/061a2f/006666?text=Home+Page) | ![Groups](https://placehold.co/600x400/061a2f/006666?text=Groups+Draw) |
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Installation & Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Get the project running locally in minutes!
 
-### Code Splitting
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/cricket-grouper.git
+    cd cricket-grouper
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-### Analyzing the Bundle Size
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4.  **Open your browser**
+    Visit `http://localhost:5173` to see the app in action!
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions are welcome! If you have ideas for cooler animations or better logic, feel free to open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<div align="center">
 
-### `npm run build` fails to minify
+**Made with ❤️ for Cricket Enthusiasts**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![HTG Logo](https://img.shields.io/badge/HTG-2025-success?style=flat-square)
+
+</div>
